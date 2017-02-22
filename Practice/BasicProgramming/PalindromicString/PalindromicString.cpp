@@ -13,19 +13,16 @@ int main()
 	int length = strlen(str);
 	for (int i = 0, j = length - 1; i < length / 2; i++, j--)
 	{
-		if (str[i] == str[j])
+		if (str[i] != str[j])
 		{
 			flag = 1;
-		}
-		else
-		{
-			flag = 0;
+			break;
 		}
 	}
 	if (flag == 1)
-		cout << "YES" << endl;
-	else
 		cout << "NO" << endl;
+	else
+		cout << "YES" << endl;
     return 0;
 }
 
