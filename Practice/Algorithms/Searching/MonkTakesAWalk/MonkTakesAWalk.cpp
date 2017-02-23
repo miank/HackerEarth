@@ -1,4 +1,4 @@
-// MonkTakesAWalk.cpp : Defines the entry point for the console application.
+// MonkTakesAWalk.cpp : 
 //
 
 #include "stdafx.h"
