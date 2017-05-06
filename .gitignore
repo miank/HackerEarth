@@ -60,3 +60,7 @@ Temporary Items
 *.idb
 *.txt
 *.enc
+*stdafx.h
+*stdafx.cpp
+*targetver.h
+
