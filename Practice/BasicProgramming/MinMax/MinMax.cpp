@@ -29,25 +29,25 @@ int main()
 			}
 		}
 	}
-	cout << max;
-	cout << min;
+	//cout << max;
+	//cout << min;
 	int count(0);
 	for (int i = min; i <= max; i++)
 	{
 		int ele = i;
-		for (int i = min; i <= max; i++)
+		for (int j = 0; j <= max; j++)
 		{
-			if (ele == arr[i])
+			if (ele == arr[j])
 				count++;
 		}
 	}
-	if (count == n)
+	if (count == max)
 	{
-		cout << "YES";
+		cout << "YES" << endl;
 	}
 	else
 	{
-		cout << "NO";
+		cout << "NO" << endl;
 	}
     return 0;
 }
