@@ -13,7 +13,7 @@ int main()
 	while (t > 0)
 	{
 		cin >> n;
-		count = 0;
+		//count = 0;
 		for (int i = 0; i < n; i++)
 		{
 			cin >> strArr[i];
@@ -21,13 +21,12 @@ int main()
 		for (int i = 0; i < n; i++)
 		{
 			string ch = strArr[i];
-			/*int a = atoi(ch.c_str());*/
-			if (strArr[i] >= "0" && strArr[i] <= "9")
+			if (strArr[i] >= "0" && strArr[i] <= "99999")
 			{
 				count++;
 			}
 		}
-		cout << "count is " << count;
+		cout << count;
 		t--;
 	}
     return 0;
