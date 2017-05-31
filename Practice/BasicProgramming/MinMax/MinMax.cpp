@@ -1,54 +1,39 @@
-// MinMax.cpp 
-
-#include "stdafx.h"
-#include <iostream>
-using namespace std;
-
+#include <stdio.h>
 int main()
 {
-	int n(0), min(0), max(0);
-	cin >> n;
-	int *arr = new int[n];
-
-	for (int i = 0; i < n; i++)
+	int a[1001] = { 0 };
+	int n, e;
+	scanf("%d", &n);
+	int i, min, max;
+	min = 101;
+	max = 0;
+	for (i = 0; i < n; i++)
 	{
-		cin >> arr[i];
-	}
-
-	max = min = arr[0];
-	
-	for (int i = 1; i < n; i++)
-	{
-		if (max < arr[i])
-			max = arr[i];
-		else
+		scanf("%d", &e);
+		if (e < min)
 		{
-			if (min > arr[i])
-			{
-				min = arr[i];
-			}
+			min = e;
+		}
+		if (e > max)
+		{
+			max = e;
+		}
+		a[e]++;
+	}
+	for (i = min; i <= max; i++)
+	{
+		if (a[i] == 0)
+		{
+			break;
 		}
 	}
-	//cout << max;
-	//cout << min;
-	int count(0);
-	for (int i = min; i <= max; i++)
+	if (i <= max)
 	{
-		int ele = i;
-		for (int j = 0; j <= max; j++)
-		{
-			if (ele == arr[j])
-				count++;
-		}
-	}
-	if (count == max)
-	{
-		cout << "YES" << endl;
+		printf("NO\n");
 	}
 	else
 	{
-		cout << "NO" << endl;
+		printf("YES\n");
 	}
-    return 0;
+	return 0;
 }
-
