@@ -66,3 +66,4 @@ Temporary Items
 
 *.db-wal
 *.db-shm
+*.vcxproj
