@@ -67,3 +67,5 @@ Temporary Items
 *.db-wal
 *.db-shm
 *.vcxproj
+*.json
+*.sqlite
