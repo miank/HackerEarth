@@ -69,3 +69,4 @@ Temporary Items
 *.vcxproj
 *.json
 *.sqlite
+*.sln
