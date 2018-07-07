@@ -72,3 +72,4 @@ Temporary Items
 *.sln
 *.pyproj
 /Practice/BasicProgramming/ques2/ques2.cpp
+*.user
