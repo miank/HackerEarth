@@ -73,3 +73,5 @@ Temporary Items
 *.pyproj
 /Practice/BasicProgramming/ques2/ques2.cpp
 *.user
+*.h
+*pch.cpp
